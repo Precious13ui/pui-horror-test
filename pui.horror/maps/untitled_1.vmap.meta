@@ -1,0 +1,12 @@
+{
+  "cloud_packages": [
+    "mingoelgato.tf2_ambulance#14567",
+    "steeldevgroup.plainbrick#13557",
+    "quack.color_checker#13587",
+    "xenthio.tiles_brown#12811"
+  ],
+  "game_packages": [
+    "pui.pui_horror"
+  ],
+  "addon_packages": []
+}

@@ -1,0 +1,49 @@
+@using Sandbox;
+@using System;
+@using Sandbox.UI;
+
+@namespace Horror
+@inherits RootPanel
+
+<style>
+	HUD {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.gameText {
+		font-size: 60;
+		color: white;
+		font-family: Poppins;
+		font-weight: 600;
+		bottom: 150px;
+		text-stroke: 5px black;
+	}
+</style>
+
+<root>
+</root>
+
+@code {
+	[Event("DisplayFlash")]
+	public void DisplayFlash()
+	{
+		var label = AddChild<Label>("gameText");
+		label.Text = "press f to use flash";
+		//FadeAsync(label);
+	}
+
+	public async void FadeAsync(Panel panel)
+	{
+		if (Input.Pressed(InputButton.Flashlight))
+		{
+			while (panel.Opacity != 0)
+			{
+				panel.SetAttribute("opacity", Convert.ToString(panel.Opacity - 1 * Time.Delta));
+			}
+		}
+		panel.Delete();
+	}
+}

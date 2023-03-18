@@ -1,0 +1,25 @@
+{
+  "publish": {
+    "Enabled": true,
+    "ProjectConfig": {
+      "Title": "pUI\u0027s Simple Flashlight Model",
+      "Type": "model",
+      "Org": "pui",
+      "Ident": "f_light",
+      "Tags": null,
+      "Schema": 0,
+      "HasAssets": false,
+      "AssetsPath": null,
+      "ResourcePaths": null,
+      "HasCode": false,
+      "CodePath": null,
+      "Metadata": {
+        "SingleAssetSource": "vmdls/f_light.vmdl",
+        "Summary": "Leave me alone I\u0027m not a modeler",
+        "Description": "Little model made in Blender",
+        "Public": true,
+        "ReplaceTags": ""
+      }
+    }
+  }
+}
